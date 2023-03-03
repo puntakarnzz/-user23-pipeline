@@ -51,7 +51,7 @@ jobs:
 
   deploy-app-service:
     name: Deploy
-    runs-on: [ self-hosted, user23-sbx, vm-user23SelfHost-az-usw3-sbx-001 ]
+    runs-on: [ self-hosted, tutorial-be-dev, vm-user23SelfHost-az-usw3-sbx-001 ]
     needs: [build-app-service]
     environment:
       name: dev
