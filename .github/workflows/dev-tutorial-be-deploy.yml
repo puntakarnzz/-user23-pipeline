@@ -49,7 +49,7 @@ jobs:
         name: ${{ env.ARTIFACT_NAME }}
         path: '${{ github.workspace }}/Tutorial.Api/bin/Release/net6.0/${{ env.ARTIFACT_NAME }}.tar.gz'
 
-deploy-app-service:
+  deploy-app-service:
     name: Deploy
     runs-on: [ self-hosted, user23-sbx, vm-user23SelfHost-az-usw3-sbx-001 ]
     needs: [build-app-service]
