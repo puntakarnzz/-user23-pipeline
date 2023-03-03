@@ -14,8 +14,8 @@ env:
   ARTIFACT_NAME: "artifact-tutorial-be-0.0.1-snapshot"
   APP_RESOURCE_NAME: app-user23-az-usw3-dev-001
 
-  jobs:
-    build-app-service:
+jobs:
+  build-app-service:
     name: Build
     runs-on: ubuntu-latest
     environment:
@@ -48,4 +48,3 @@ env:
       with:
         name: ${{ env.ARTIFACT_NAME }}
         path: '${{ github.workspace }}/Tutorial.Api/bin/Release/net6.0/${{ env.ARTIFACT_NAME }}.tar.gz'
-
